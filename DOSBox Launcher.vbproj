@@ -68,7 +68,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>DOSBox_DOSBOX_ICO.ico</ApplicationIcon>
+    <ApplicationIcon>DOSBox.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -137,7 +137,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DOSBox_DOSBOX_ICO.ico" />
+    <None Include="DOSBox.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
