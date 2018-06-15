@@ -90,11 +90,11 @@ namespace DOSBox_Launcher
 
             if (txtFilename.Text.Substring(txtFilename.Text.Length - 4).ToLower() == ".bat")
             {
-                template.Add($"call \"{(txtFilename.Text.Contains("\\") ? txtFilename.Text.Substring(cdPath.Length + 1) : txtFilename.Text)}\"");
+                template.Add($"call {(txtFilename.Text.Contains("\\") ? txtFilename.Text.Substring(cdPath.Length + 1) : txtFilename.Text)}");
             }
             else
             {
-                template.Add(txtFilename.Text);
+                template.Add(txtFilename.Text.Contains("\\") ? txtFilename.Text.Substring(cdPath.Length + 1) : txtFilename.Text);
             }
 
             if (chkExit.Checked)
